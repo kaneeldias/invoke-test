@@ -15,10 +15,10 @@ public client class TestClient {
     }
 }
 
+TestClient testClient = new;
 
 public function main() returns error? {
     io:println("Inside Ballerina main method");
-    TestClient testClient = new;
     string result = testClient.callBMethod();
     io:println(result);
 }
@@ -26,7 +26,6 @@ public function main() returns error? {
 service / on new http:Listener(8080) {
     resource function get callBMethod() returns error? {
         io:println("Inside Ballerina service resource method");
-        TestClient testClient = new;
         string result = testClient.callBMethod();
         io:println(result);
     }
