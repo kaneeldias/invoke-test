@@ -1,8 +1,5 @@
 target
 
-# Compiled class file
-*.class
-
 # Log file
 *.log
 
@@ -40,7 +37,6 @@ target
 
 # gradle
 .gradle
-build/
 gradle-app.setting
 !gradle-wrapper.jar
 .gradletasknamecache
