@@ -1,0 +1,10 @@
+[package]
+org = "ballerina"
+name = "test_project"
+version = "0.0.1"
+
+[[platform.java11.dependency]]
+groupId = "io.ballerina.persist"
+artifactId = "persist-native"
+version = "0.3.0"
+path = "../native/build/libs/test-project-native-0.0.1-SNAPSHOT.jar"
